@@ -122,7 +122,7 @@
     <div class="sticky top-0 z-40 bg-white/90 backdrop-blur-md shadow-sm py-3 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-4 overflow-x-auto no-scrollbar">
             <div class="flex space-x-3 md:justify-center min-w-max pb-1">
-                <template x-for="(day, index) in ['2/3 抵達', '2/4 雪祭', '2/5 圓山', '2/6 小樽', '2/7 移動', '2/8 洞爺', '2/9 歸途']">
+                <template x-for="(day, index) in ['03 抵達', '04 雪祭', '05 圓山', '06 小樽', '07 移動', '08 洞爺', '09 歸途']">
                     <button 
                         @click="activeDay = index; document.getElementById('itinerary-section').scrollIntoView({behavior: 'smooth'})"
                         :class="activeDay === index ? 'bg-slate-700 text-white shadow-md' : 'bg-gray-100 text-gray-500 hover:bg-gray-200'"
@@ -157,7 +157,7 @@
                         <!-- Left Part (Details) -->
                         <div class="w-3/4 p-5 flex flex-col justify-between border-l-4 border-blue-500">
                             <div class="flex items-center text-xs text-gray-500 font-sans">
-                                <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-2 font-bold">去程</span> 2026.02.03 (二)
+                                <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-2 font-bold">去程</span> 2026.02.03 (二) 桃園機場 第二航廈
                             </div>
                             <div class="flex items-center justify-between mt-2">
                                 <div>
@@ -166,7 +166,7 @@
                                 </div>
                                 <div class="flex flex-col items-center px-2">
                                     <i class="fas fa-plane text-blue-400 text-lg"></i>
-                                    <span class="text-[10px] text-gray-400 mt-1">CI 130</span>
+                                    <span class="text-[10px] text-gray-400 mt-1">CI 130 波音777</span>
                                 </div>
                                 <div>
                                     <div class="text-3xl font-bold text-slate-800">CTS</div>
@@ -190,7 +190,7 @@
                         <!-- Left Part (Details) -->
                         <div class="w-3/4 p-5 flex flex-col justify-between border-l-4 border-green-500">
                             <div class="flex items-center text-xs text-gray-500 font-sans">
-                                <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded mr-2 font-bold">回程</span> 2026.02.09 (一)
+                                <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded mr-2 font-bold">回程</span> 2026.02.09 (一) 新千歲機場 第一航廈
                             </div>
                             <div class="flex items-center justify-between mt-2">
                                 <div>
@@ -199,7 +199,7 @@
                                 </div>
                                 <div class="flex flex-col items-center px-2">
                                     <i class="fas fa-plane fa-rotate-180 text-green-500 text-lg"></i>
-                                    <span class="text-[10px] text-gray-400 mt-1">BR 115</span>
+                                    <span class="text-[10px] text-gray-400 mt-1">BR 115 波音787</span>
                                 </div>
                                 <div>
                                     <div class="text-3xl font-bold text-slate-800">TPE</div>
@@ -366,7 +366,7 @@
                             <h3 class="text-lg font-bold text-slate-800">Sapporo 札幌</h3>
                             <p class="text-xs text-blue-500 font-sans mb-1">サンコート円山ガーデンヒルズ</p>
                             <p class="text-xs text-gray-400 font-sans mb-3">南6条西26丁目4-10</p>
-                            <a href="https://www.google.com/maps/search/?api=1&query=Sun+Court+Maruyama+Garden+Hills" target="_blank" class="text-xs border border-gray-300 rounded px-2 py-1 hover:bg-gray-100"><i class="fas fa-map-marker-alt mr-1"></i>View On Map</a>
+                            <a href="https://www.google.com/maps?sca_esv=dfadecdb5483248d&rlz=1C1RXQR_zh-TWTW951TW951&output=search&q=%E3%82%B5%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%88%E5%86%86%E5%B1%B1%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E3%83%92%E3%83%AB%E3%82%BA&source=lnms&fbs=AIIjpHybaGNnaZw_4TckIDK59Rtxl0bhyhatzyOuIp0FUBCH6PHsZqR_VbIXSuKTtehnBv7b96hi5Dqvm_kIdaTpkknME5binLss_artfOGM147RKuvgdqg7P1GYIbhlKS8IUG5K0bG7olMq-AssygDgVM3OT15RXHrFSDAdzZ-k_D_t_nDwdVMwRJx-CXiZD15KCqVZnXKW&entry=mc&ved=1t:200715&ictx=111" target="_blank" class="text-xs border border-gray-300 rounded px-2 py-1 hover:bg-gray-100"><i class="fas fa-map-marker-alt mr-1"></i>View On Map</a>
                         </div>
                     </div>
 
@@ -380,7 +380,7 @@
                             <h3 class="text-lg font-bold text-slate-800">Otaru 小樽</h3>
                             <p class="text-xs text-cyan-500 font-sans mb-1">SecondHouse Otaru Garden</p>
                             <p class="text-xs text-gray-400 font-sans mb-3">花園4丁目18-14</p>
-                            <a href="https://www.google.com/maps/search/?api=1&query=4-chome-18-14+Hanazono+Otaru" target="_blank" class="text-xs border border-gray-300 rounded px-2 py-1 hover:bg-gray-100"><i class="fas fa-map-marker-alt mr-1"></i>View On Map</a>
+                            <a href="https://www.google.com/maps/place/SECOND+HOUSE+GARDEN+OTARU/@43.1894346,140.9971616,17z/data=!4m9!3m8!1s0x5f0ae15316dc1a31:0x200f5bcbe004102e!5m2!4m1!1i2!8m2!3d43.1893923!4d140.9970529!16s%2Fg%2F11w3ly3_d8?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-xs border border-gray-300 rounded px-2 py-1 hover:bg-gray-100"><i class="fas fa-map-marker-alt mr-1"></i>View On Map</a>
                         </div>
                     </div>
 
@@ -394,7 +394,7 @@
                             <h3 class="text-lg font-bold text-slate-800">Toyako 洞爺湖</h3>
                             <p class="text-xs text-orange-400 font-sans mb-1">セカンドハウス洞爺 (洞爺家外家)</p>
                             <p class="text-xs text-gray-400 font-sans mb-3">Toyako Onsen 40-2</p>
-                            <a href="https://www.google.com/maps/search/?api=1&query=Toyako+Onsen+40-2" target="_blank" class="text-xs border border-gray-300 rounded px-2 py-1 hover:bg-gray-100"><i class="fas fa-map-marker-alt mr-1"></i>View On Map</a>
+                            <a href="https://www.google.com/maps/place/%E3%82%BB%E3%82%AB%E3%83%B3%E3%83%89%E3%83%8F%E3%82%A6%E3%82%B9%E6%B4%9E%E7%88%BA/@42.5648458,140.81905,17z/data=!3m1!4b1!4m9!3m8!1s0x5f9fe372d694036d:0x55995609916c0de3!5m2!4m1!1i2!8m2!3d42.5648419!4d140.8216303!16s%2Fg%2F11s9xz_ww0?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-xs border border-gray-300 rounded px-2 py-1 hover:bg-gray-100"><i class="fas fa-map-marker-alt mr-1"></i>View On Map</a>
                         </div>
                     </div>
                 </div>
@@ -404,138 +404,412 @@
         <!-- 5. ITINERARY -->
         <section id="itinerary-section" class="min-h-[600px] scroll-mt-24">
             <div class="flex items-end mb-8 border-b-2 border-gray-200 pb-2">
-                <h2 class="text-3xl font-bold text-slate-700 mr-4">旅程</h2>
-                <span class="text-sm text-gray-400 font-sans pb-1">Daily Itinerary</span>
+                <h2 class="text-3xl font-bold text-slate-700 mr-4">旅程與食卓</h2>
+                <span class="text-sm text-gray-400 font-sans pb-1">Daily Itinerary & Dining</span>
             </div>
 
-            <!-- Day 1 (Sapporo) -->
-            <div x-show="activeDay === 0" x-transition.opacity class="flex flex-col md:flex-row gap-8 items-start">
-                <div class="w-full md:w-1/3 polaroid rotate-2 bg-white"><img src="https://tw.wamazing.com/media/wp-content/uploads/sites/4/2019/09/shinchitoseairporttaxfree_pixta_94252250_M.jpg.webp" class="polaroid-img mb-3"><div class="text-center font-sans text-sm text-gray-500">2026.02.03</div></div>
-                <div class="w-full md:w-2/3 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="flex items-center gap-3 mb-6"><span class="text-5xl font-bold text-blue-100">03</span><div><h3 class="text-2xl font-bold text-slate-700">初見雪國，圓山靜好</h3><p class="text-sm text-gray-400 font-sans">週二 | TPE → CTS (宿:札幌)</p></div></div>
-                    <ul class="space-y-6">
-                        <li class="flex gap-4"><div class="mt-1 text-blue-500"><i class="fas fa-plane-arrival"></i></div><div><h4 class="font-bold text-gray-800">13:15 抵達</h4><p class="text-sm text-gray-600 mt-1 font-sans">搭乘 JR 快速 Airport 號前往札幌站。</p></div></li>
-                        <li class="flex gap-4"><div class="mt-1 text-purple-500"><i class="fas fa-taxi"></i></div><div><h4 class="font-bold text-gray-800">15:30 入住 円山 Garden Hills</h4><p class="text-sm text-gray-600 mt-1 font-sans">從札幌站搭計程車直達民宿。Check-in 後前往 Maruyama Class 超市採買。</p></div></li>
-                        <li class="flex gap-4"><div class="mt-1 text-orange-500"><i class="fas fa-utensils"></i></div><div><h4 class="font-bold text-gray-800">湯咖哩的溫暖</h4><p class="text-sm text-gray-600 mt-1 font-sans">晚餐推薦「Picante 圓山店」或「Suage」，香料湯頭驅散寒氣。</p></div></li>
-                    </ul>
+            <div x-show="activeDay === 0" x-transition.opacity class="flex flex-col md:flex-row gap-6 items-start">
+                <div class="w-full md:w-1/4 polaroid rotate-2 bg-white">
+                    <img src="https://tw.wamazing.com/media/wp-content/uploads/sites/4/2019/09/shinchitoseairporttaxfree_pixta_94252250_M.jpg.webp" class="polaroid-img mb-3">
+                    <div class="text-center font-sans text-sm text-gray-500">2026.02.03 <br> Welcome to Hokkaido</div>
                 </div>
-            </div>
 
-            <!-- Day 2 (Sapporo) -->
-            <div x-show="activeDay === 1" x-transition.opacity class="flex flex-col md:flex-row gap-8 items-start">
-                <div class="w-full md:w-1/3 polaroid -rotate-2 bg-white"><img src="https://www.bubu-jp.com/wp-content/uploads/2023/11/45d846f2d4f790990da845f38589982e.jpg" class="polaroid-img mb-3"><div class="text-center font-sans text-sm text-gray-500">Snow Festival!</div></div>
-                <div class="w-full md:w-2/3 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="flex items-center gap-3 mb-6"><span class="text-5xl font-bold text-blue-100">04</span><div><h3 class="text-2xl font-bold text-slate-700">第76屆札幌雪祭．開幕</h3><p class="text-sm text-gray-400 font-sans">週三 | 大通公園 & 薄野 (宿:札幌)</p></div></div>
-                    <div class="bg-gradient-to-r from-blue-50 to-white p-4 rounded-lg mb-6 border-l-4 border-blue-400"><p class="text-sm text-slate-600 font-sans italic">"今天是第76屆札幌雪祭開幕！能看到雪像最完整、最潔白的時刻，超幸運！"</p></div>
-                    <ul class="space-y-6">
-                        <li class="flex gap-4"><div class="mt-1 text-blue-500"><i class="fas fa-snowman"></i></div><div><h4 class="font-bold text-gray-800">大通公園雪像</h4><p class="text-sm text-gray-600 mt-1 font-sans">搭地鐵到大通站。從1丁目散步到11丁目。白天看細節，晚上看點燈，一定要去電視塔展望台俯瞰全景。</p></div></li>
-                        <li class="flex gap-4"><div class="mt-1 text-pink-500"><i class="fas fa-glass-cheers"></i></div><div><h4 class="font-bold text-gray-800">薄野冰雕 & 成吉思汗烤肉</h4><p class="text-sm text-gray-600 mt-1 font-sans">傍晚到薄野看晶瑩剔透的冰雕，吃經典烤羊肉。</p></div></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Day 3 (Sapporo) -->
-            <div x-show="activeDay === 2" x-transition.opacity class="flex flex-col md:flex-row gap-8 items-start">
-                <div class="w-full md:w-1/3 polaroid rotate-1 bg-white"><img src="https://photo.settour.com.tw/900x600/https://www.settour.com.tw/ss_img/info/location/SPK/K0/SPK0000153/SPK0000153_73852.jpg" class="polaroid-img mb-3"><div class="text-center font-sans text-sm text-gray-500">Shrine & Sweets</div></div>
-                <div class="w-full md:w-2/3 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="flex items-center gap-3 mb-6"><span class="text-5xl font-bold text-blue-100">05</span><div><h3 class="text-2xl font-bold text-slate-700">神宮雪韻與甜點時光</h3><p class="text-sm text-gray-400 font-sans">週四 | 圓山周邊 & 白色戀人 (宿:札幌)</p></div></div>
-                    <ul class="space-y-6">
-                        <li class="flex gap-4"><div class="mt-1 text-red-700"><i class="fas fa-torii-gate"></i></div><div><h4 class="font-bold text-gray-800">北海道神宮 & 動物園</h4><p class="text-sm text-gray-600 mt-1 font-sans">早晨參拜最清幽，別忘了在六花亭茶屋享用現烤的「判官餅」，暖手也暖心。</p></div></li>
-<li class="flex gap-4">
-                            <div class="mt-1 text-green-600"><i class="fas fa-paw"></i></div>
-                            <div>
-                                <h4 class="font-bold text-gray-800">圓山動物園</h4>
-                                <p class="text-sm text-gray-600 mt-1 font-sans">就在神宮隔壁。冬天才有活力的北極熊與小貓熊，是療癒心靈的最佳場所。</p>
-                            </div>
-                        </li>
-                        <li class="flex gap-4"><div class="mt-1 text-blue-400"><i class="fas fa-cookie-bite"></i></div><div><h4 class="font-bold text-gray-800">白色戀人公園</h4><p class="text-sm text-gray-600 mt-1 font-sans">搭計程車約15分。歐風庭園的點燈非常夢幻。在充滿巧克力香氣的工廠裡，享受優雅的下午茶。</p></div></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Day 4 (Otaru) -->
-            <div x-show="activeDay === 3" x-transition.opacity class="flex flex-col md:flex-row gap-8 items-start">
-                <div class="w-full md:w-1/3 polaroid -rotate-1 bg-white"><img src="https://rimage.gnst.jp/livejapan.com/public/article/detail/a/10/00/a1000055/img/basic/a1000055_main.jpg?20210222182701&q=80" class="polaroid-img mb-3"><div class="text-center font-sans text-sm text-gray-500">Otaru Night</div></div>
-                <div class="w-full md:w-2/3 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="flex items-center gap-3 mb-6"><span class="text-5xl font-bold text-cyan-100">06</span><div><h3 class="text-2xl font-bold text-slate-700">自駕出發，情書小樽</h3><p class="text-sm text-gray-400 font-sans">週五 | 札幌 → 小樽 (宿:小樽)</p></div></div>
-                  <div class="flex items-start bg-slate-800 text-white p-4 rounded-xl mb-6 shadow-md border-l-4 border-yellow-400">
-                        <i class="fas fa-car-side text-2xl mr-4 text-yellow-400 mt-1"></i>
+                <div class="w-full md:w-3/4 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-4xl font-bold text-blue-100">03</span>
                         <div>
-                            <h4 class="font-bold text-sm">租車自駕開始</h4>
-                            <p class="text-xs text-gray-300 font-sans mt-1">請再三確認雪胎 (Studless Tires) 狀況。前往小樽建議走高速公路 (札樽道)，除雪較完善。</p>
+                            <h3 class="text-xl font-bold text-slate-700">初見雪國，札幌夜景</h3>
+                            <p class="text-xs text-gray-400 font-sans">週二 | TPE → CTS (宿:札幌)</p>
                         </div>
                     </div>
-                                     <ul class="space-y-6">
-                        <li class="flex gap-4">
-                            <div class="mt-1 text-cyan-600"><i class="fas fa-map-marked-alt"></i></div>
-                            <div>
-                                <h4 class="font-bold text-gray-800">抵達小樽花園</h4>
-                                <p class="text-sm text-gray-600 mt-1 font-sans">Check-in 後，讓車子休息，雙腳是探索這座懷舊城市的最佳工具。</p>
-                            </div>
-                        </li>
-                        <li class="flex gap-4">
-                            <div class="mt-1 text-orange-400"><i class="fas fa-music"></i></div>
-                            <div>
-                                <h4 class="font-bold text-gray-800">堺町通散策</h4>
-                                <p class="text-sm text-gray-600 mt-1 font-sans">北一硝子的煤油燈咖啡館、八音盒堂的悠揚樂聲、LeTAO的起司蛋糕。這是小樽的文藝復興。</p>
-                            </div>
-                        </li>
-                        <li class="flex gap-4">
-                            <div class="mt-1 text-blue-800"><i class="fas fa-fish"></i></div>
-                            <div>
-                                <h4 class="font-bold text-gray-800">極上壽司晚餐</h4>
-                                <p class="text-sm text-gray-600 mt-1 font-sans">前往附近的「壽司屋通」，品嚐如寶石般新鮮的海膽與鮭魚卵(推薦：伊勢鮨、政壽司)。</p>
-                            </div>
-                        </li>
-                    </ul>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-camera text-blue-500 mr-2"></i>景點</h4>
+                            <ul class="space-y-4 text-sm font-sans text-gray-600">
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-blue-400 font-bold min-w-[40px]">13:15</span>
+                                    <span>抵達新千歲機場，搭乘 JR 快速 Airport 號前往札幌站。</span>
+                                </li>
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-blue-400 font-bold min-w-[40px]">15:30</span>
+                                    <span>搭計程車前往圓山民宿 Check-in。
+
+</span>
+                                </li>
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-blue-400 font-bold min-w-[40px]">19:30</span>
+                                    <a href="https://maps.app.goo.gl/rVjkATCBGA7Hmc319" target="_blank" class="map-link font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>藻岩山展望台</a>
+                            <span class="block text-xs mt-1">日本新三大夜景，搭乘纜車俯瞰寶石般的札幌。</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-orange-50/50 p-4 rounded-xl border border-orange-100">
+                            <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-utensils text-orange-500 mr-2"></i>食卓</h4>
+                            <ul class="space-y-4 text-sm font-sans text-gray-600">
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">早餐</span>
+                                    <div>
+                                        <a href="https://maps.app.goo.gl/fBRCD8XQ5uAUwMtt5" target="_blank" class="map-link font-bold text-slate-800">桃園機場第２航夏</a>
+                                        <p class="text-xs">在管制區內有興波咖啡、麥當勞、豆豆里、春水堂等；在非管制區有星巴克、摩斯漢堡、漢堡王等</p>
+                                    </div>
+                                </li>
+  <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">午餐</span>
+                                    <div>
+                                        <span class="font-bold text-slate-800">華航飛機餐</span>
+                                        <p class="text-xs">線上預訂：連續八屆蟬聯米其林必比登推薦、華人養生湯品第一品牌「雙月」，獨創經典機上餐食。</p>
+                                    </div>
+                                </li>
+
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">晚餐</span>
+                                    <div>
+<a href="https://maps.app.goo.gl/fBRCD8XQ5uAUwMtt5" target="_blank" class="map-link font-bold text-slate-800">Picante 湯咖哩 円山店</a>
+
+                                        <p class="text-xs">附近享用熱騰騰的湯咖哩，香料湯頭驅散寒氣。</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Day 5 (Toya - Travel) -->
-            <div x-show="activeDay === 4" x-transition.opacity class="flex flex-col md:flex-row gap-8 items-start">
-                <div class="w-full md:w-1/3 polaroid rotate-2 bg-white"><img src="https://ageimo.com/wp-content/uploads/2020/07/1210-e1597366085756.jpg" class="polaroid-img mb-3"><div class="text-center font-sans text-sm text-gray-500">Move to Toya</div></div>
-                <div class="w-full md:w-2/3 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="flex items-center gap-3 mb-6"><span class="text-5xl font-bold text-orange-100">07</span><div><h3 class="text-2xl font-bold text-slate-700">琥珀色的微醺</h3><p class="text-sm text-gray-400 font-sans">週六 | 小樽 → 洞爺湖 (宿:洞爺湖)</p></div></div>
-                    <div class="bg-yellow-50 p-3 rounded mb-4 text-xs text-yellow-800"><i class="fas fa-exclamation-circle mr-1"></i>雖是雪燈之路開幕日，但為了避免夜間山路駕駛危險，建議下午即前往洞爺。</div>
-                    <ul class="space-y-6">
-                        <li class="flex gap-4"><div class="mt-1 text-orange-300"><i class="fas fa-utensils"></i></div><div><h4 class="font-bold text-gray-800">三角市場早餐 & 余市</h4><p class="text-sm text-gray-600 mt-1 font-sans">早餐後可順道去余市蒸餾所參觀。**注意：駕駛請勿試飲，現場有果汁提供。**</p></div></li>
-                        <li class="flex gap-4"><div class="mt-1 text-gray-600"><i class="fas fa-road"></i></div><div><h4 class="font-bold text-gray-800">駕車經中山峠</h4><p class="text-sm text-gray-600 mt-1 font-sans">沿國道230號行駛。一定要買名物「炸馬鈴薯」當點心，順便眺望羊蹄山。天黑前抵達洞爺湖為佳。</p></div></li>
-                        <li class="flex gap-4"><div class="mt-1 text-orange-500"><i class="fas fa-hot-tub"></i></div><div><h4 class="font-bold text-gray-800">洞爺湖彩燈</h4><p class="text-sm text-gray-600 mt-1 font-sans">入住後泡湯，晚餐後散步至溫泉街中心的「Illumination Tunnel」，40萬顆燈泡構築的光之廊道。
 
-</p></div></li>
-                    </ul>
+            <div x-show="activeDay === 1" x-transition.opacity class="flex flex-col md:flex-row gap-6 items-start">
+                <div class="w-full md:w-1/4 polaroid -rotate-2 bg-white">
+                    <img src="https://www.bubu-jp.com/wp-content/uploads/2023/11/45d846f2d4f790990da845f38589982e.jpg" class="polaroid-img mb-3">
+                    <div class="text-center font-sans text-sm text-gray-500">Sapporo Snow Festival</div>
+                </div>
+                <div class="w-full md:w-3/4 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-4xl font-bold text-blue-100">04</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-700">文藝札幌與雪祭</h3>
+                            <p class="text-xs text-gray-400 font-sans">週三 | 市區觀光 (宿:札幌)</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-camera text-blue-500 mr-2"></i>景點</h4>
+                            <ul class="space-y-4 text-sm font-sans text-gray-600">
+                                <li><a href="https://maps.app.goo.gl/1kQT1JRzyZTM5mFfA" target="_blank" class="map-link font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>北海道大學綜合博物館</a><br>漫步於榆樹森林與歷史建築中。</li>
+                                <li><a href="https://maps.app.goo.gl/V1RENQSteb5RC1JX6" target="_blank" class="map-link font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>札幌啤酒博物館</a><br>紅磚建築群，見證開拓使的歷史。</li>
+                                <li><a href="https://maps.app.goo.gl/XRGQLBGnfTErzJji6" target="_blank" class="map-link font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>PARCO 札幌</a><br>大通公園旁的購物地標。</li>
+                                <li><span class="font-bold text-blue-600">第76屆札幌雪祭</span> (大通&薄野)<br>傍晚點燈後最美，從電視塔俯瞰白色地毯，再到薄野看晶瑩剔透的冰雕。</li>
+                            </ul>
+                        </div>
+                        <div class="bg-orange-50/50 p-4 rounded-xl border border-orange-100">
+                            <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-utensils text-orange-500 mr-2"></i>食卓</h4>
+                            <ul class="space-y-4 text-sm font-sans text-gray-600">
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">午餐</span>
+                                    <div>
+                                        <a href="https://maps.app.goo.gl/5BrwSYzadLfREAqq7" target="_blank" class="map-link font-bold text-slate-800">Japanese Ramen Noodle Lab Q</a>
+                                        <p class="text-xs">林永勝推薦！似高級懷石料理般的清湯拉麵。</p>
+                                    </div>
+                                </li>
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">晚餐A</span>
+                                    <div>
+                                           <a href="https://maps.app.goo.gl/zWrgjfaZpn726n6J7" target="_blank" class="map-link font-bold text-slate-800">Shihachi (シハチ鮮魚店)</a>
+                                        <p class="text-xs">財務長想吃的海鮮丼！位於狸小路附近，新鮮滿點。</p>
+                                    </div>
+                                </li>
+  <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">晚餐B</span>  <div>
+
+                                    <a href="https://maps.app.goo.gl/bwQuU6RbkW3hYNkp8" target="_blank" class="map-link font-bold text-slate-800">海膽專門店 世壱屋</a>
+  <p class="text-xs">小樽玻璃美術館旁也有一家。</p> </div>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Day 6 (Toya - Full Day) -->
-            <div x-show="activeDay === 5" x-transition.opacity class="flex flex-col md:flex-row gap-8 items-start">
-                <div class="w-full md:w-1/3 polaroid -rotate-2 bg-white"><img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1280,h_1595/w_79,x_14,y_14,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/zhvkexrowxitzgmuceal/%E5%8C%97%E6%B5%B7%E9%81%93%E5%86%AC%E5%AD%A3%E9%99%90%E5%AE%9A%E6%B4%9E%E7%88%BA%E6%B9%96+%E7%99%BB%E5%88%A5%E5%B0%8F%E5%9C%98%E4%B8%80%E6%97%A5%E9%81%8A%E7%A9%8D%E9%9B%AA%E6%98%A0%E6%B9%96+%E7%81%AB%E5%B1%B1%E5%A5%87%E6%99%AF.webp" class="polaroid-img mb-3"><div class="text-center font-sans text-sm text-gray-500">Relaxing Toya</div></div>
-                <div class="w-full md:w-2/3 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="flex items-center gap-3 mb-6"><span class="text-5xl font-bold text-orange-100">08</span><div><h3 class="text-2xl font-bold text-slate-700">湖畔慢活</h3><p class="text-sm text-gray-400 font-sans">週日 | 洞爺湖全日 (宿:洞爺)</p></div></div>
-                    <ul class="space-y-6">
-                        <li class="flex gap-4"><div class="mt-1 text-blue-600"><i class="fas fa-mountain"></i></div><div><h4 class="font-bold text-gray-800">有珠山纜車 & 昭和新山</h4><p class="text-sm text-gray-600 mt-1 font-sans">搭纜車俯瞰壯闊的火山口與湖景。山下可參觀熊牧場。</p></div></li>
-                        <li class="flex gap-4"><div class="mt-1 text-green-500"><i class="fas fa-coffee"></i></div><div><h4 class="font-bold text-gray-800">Lake Hill Farm</h4><p class="text-sm text-gray-600 mt-1 font-sans">開車約15分。品嚐新鮮牛奶製作的義式冰淇淋與泡芙。</p></div></li>
-                        <li class="flex gap-4"><div class="mt-1 text-orange-500"><i class="fas fa-spa"></i></div><div><h4 class="font-bold text-gray-800">極致溫泉</h4><p class="text-sm text-gray-600 mt-1 font-sans">洞爺湖是「不凍湖」，冬天的湖面依然波光粼粼，泡湯賞湖是極致享受。</p></div></li>
-                    </ul>
+            <div x-show="activeDay === 2" x-transition.opacity class="flex flex-col md:flex-row gap-6 items-start">
+                <div class="w-full md:w-1/4 polaroid rotate-1 bg-white">
+                    <img src="https://photo.settour.com.tw/900x600/https://www.settour.com.tw/ss_img/info/location/SPK/K0/SPK0000153/SPK0000153_73852.jpg" class="polaroid-img mb-3">
+                    <div class="text-center font-sans text-sm text-gray-500">Maruyama Walk</div>
+                </div>
+                <div class="w-full md:w-3/4 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-4xl font-bold text-blue-100">05</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-700">圓山靜好與米其林</h3>
+                            <p class="text-xs text-gray-400 font-sans">週四 | 圓山周邊 (宿:札幌)</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-camera text-blue-500 mr-2"></i>景點</h4>
+                            <ul class="space-y-4 text-sm font-sans text-gray-600">
+                                <li><a href="https://maps.app.goo.gl/PoadkeUuCc2G6nMo6" target="_blank" class="map-link font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>北海道神宮</a><br>在雪中參拜，感受莊嚴寧靜的氣氛。</li>
+                                <li><a href="https://maps.app.goo.gl/JEWKA1fC6NmTq8Ur6" target="_blank" class="map-link font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>札幌市圓山動物園</a><br>就在神宮旁，必看雪地裡翻滾的北極熊。</li>
+                            </ul>
+                        </div>
+                        <div class="bg-orange-50/50 p-4 rounded-xl border border-orange-100">
+                            <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-utensils text-orange-500 mr-2"></i>食卓</h4>
+                            <ul class="space-y-4 text-sm font-sans text-gray-600">
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">點心</span>
+                                    <a href="https://maps.app.goo.gl/SC9unfGWVqv3jNZn7" target="_blank" class="map-link font-bold text-slate-800">六花亭 神宮茶屋店</a>
+                                    <span class="text-xs block mt-1">參拜後必吃現烤「判官餅」。</span>
+                                </li>
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">午餐</span>
+                                    <div>
+                                        <a href="https://maps.app.goo.gl/AsH5CceU2oUGoLwn6" target="_blank" class="map-link font-bold text-slate-800">Moliere (モリエール)</a>
+                                        <p class="text-xs">團長帶領！北海道米其林三星法式料理，位於圓山公園旁。<br><span class="text-red-400">*需提前預約</span></p>
+                                    </div>
+                                </li>
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">午茶</span>
+                                    <a href="https://maps.app.goo.gl/nk7PMaQEtJXfgfpaA" target="_blank" class="map-link font-bold text-slate-800">森彥咖啡 (Morihico)</a>
+                                </li>
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">晚餐</span>  <div>
+
+                                  <a href="https://maps.app.goo.gl/ZqcB8UipzepqDTXz5" target="_blank" class="map-link font-bold text-slate-800">成吉思汗 達摩本店</a>
+                                       <p class="text-xs">薄野排隊名店，炭火烤羊肉與啤酒是絕配。</p> </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Day 7 (Return) -->
-            <div x-show="activeDay === 6" x-transition.opacity class="flex flex-col md:flex-row gap-8 items-start">
-                <div class="w-full md:w-1/3 polaroid rotate-1 bg-white"><img src="https://d27h7u7rtwbie8.cloudfront.net/2019/12/dd3efbfec1af8342a8_fbtop.jpg" class="polaroid-img mb-3"><div class="text-center font-sans text-sm text-gray-500">Goodbye Hokkaido
-</div></div>
-                <div class="w-full md:w-2/3 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="flex items-center gap-3 mb-6"><span class="text-5xl font-bold text-red-100">09</span><div><h3 class="text-2xl font-bold text-slate-700">最後的絕景，滿載而歸</h3><p class="text-sm text-gray-400 font-sans">週一 | CTS → TPE</p></div></div>
-                    <ul class="space-y-6">
-                        <li class="flex gap-4"><div class="mt-1 text-blue-500"><i class="fas fa-camera"></i></div><div><h4 class="font-bold text-gray-800">09:00 Silo 展望台</h4><p class="text-sm text-gray-600 mt-1 font-sans">早餐後退房，前往「賽羅展望台」拍下洞爺湖全景紀念照。</p></div></li>
-                        <li class="flex gap-4"><div class="mt-1 text-cyan-600"><i class="fas fa-icicles"></i></div><div><h4 class="font-bold text-gray-800">支笏湖 (Optional)</h4><p class="text-sm text-gray-600 mt-1 font-sans">回程若走一般道路會經過支笏湖。若時間充裕(11:00前抵達)，可短暫參觀「冰濤祭」。</p></div></li>
-                        <li class="flex gap-4"><div class="mt-1 text-red-500"><i class="fas fa-plane-departure"></i></div><div><h4 class="font-bold text-gray-800">12:30 機場還車</h4><p class="text-sm text-gray-600 mt-1 font-sans">搭乘 BR115 (15:20) 返台。請務必預留足夠時間搭接駁車至航廈。在國內線航廈最後衝刺伴手禮（推：Kinotoya 起司塔、美瑛選果玉米麵包）。</p></div></li>
-                    </ul>
+            <div x-show="activeDay === 3" x-transition.opacity class="flex flex-col md:flex-row gap-6 items-start">
+                <div class="w-full md:w-1/4 polaroid -rotate-1 bg-white">
+                    <img src="https://rimage.gnst.jp/livejapan.com/public/article/detail/a/10/00/a1000055/img/basic/a1000055_main.jpg?20210222182701&q=80" class="polaroid-img mb-3">
+                    <div class="text-center font-sans text-sm text-gray-500">Otaru Nostalgia</div>
+                </div>
+                <div class="w-full md:w-3/4 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-4xl font-bold text-cyan-100">06</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-700">自駕出發，小樽藝術散策</h3>
+                            <p class="text-xs text-gray-400 font-sans">週五 | 札幌 → 小樽 (宿:小樽)</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-car text-blue-500 mr-2"></i>景點</h4>
+                            <div class="mb-3 text-xs bg-white p-2 rounded text-slate-500 border border-slate-200">
+                                早上取車，行駛札樽道前往小樽。
+                            </div>
+                            <ul class="space-y-3 text-sm font-sans text-gray-600">
+                                <li><a href="https://maps.app.goo.gl/YEybB6vdujXz5xs96" target="_blank" class="map-link font-bold text-slate-800">花窗玻璃美術館 (舊高橋倉庫)</a></li>
+                                <li><a href="https://maps.app.goo.gl/yvRayqxZkodoS2zQ6" target="_blank" class="map-link font-bold text-slate-800">似鳥美術館 (Nitori)</a></li>
+                                <li><a href="https://maps.app.goo.gl/9fAYP4vU33ngM9SE7" target="_blank" class="map-link font-bold text-slate-800">小樽市綜合博物館運河館</a></li>
+                                <li><a href="https://maps.app.goo.gl/Y9VoRZjxNhxuntRJ6" target="_blank" class="map-link font-bold text-slate-800">舊壽原邸</a></li>
+                            </ul>
+                        </div>
+                        <div class="bg-orange-50/50 p-4 rounded-xl border border-orange-100">
+                            <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-utensils text-orange-500 mr-2"></i>食卓</h4>
+                            <ul class="space-y-4 text-sm font-sans text-gray-600">
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">午餐</span>
+                                    <div>
+                                        <a href="https://maps.app.goo.gl/Xvh5TWUynJmN3GPk9" target="_blank" class="map-link font-bold text-slate-800">若鶏時代 なると 本店</a>
+                                        <p class="text-xs">小樽名物！半身炸雞皮脆肉嫩。</p>
+                                    </div>
+                                </li>
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">甜點</span>
+                                    <div class="flex flex-wrap gap-2 text-xs">
+                                        <a href="https://maps.app.goo.gl/pjp2NEFZhk2x5q9B7" target="_blank" class="map-link bg-white px-2 py-1 rounded shadow-sm">LeTAO 總店</a>
+                                        <a href="https://maps.app.goo.gl/qdr6qczm8WPmTA6z5" target="_blank" class="map-link bg-white px-2 py-1 rounded shadow-sm">Un délice</a>
+                                        <a href="https://maps.app.goo.gl/CYStpzofsEsVuvTF9" target="_blank" class="map-link bg-white px-2 py-1 rounded shadow-sm">Ghost Baker</a>
+                                    </div>
+                                </li>
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">晚餐</span>
+ <div>                                  
+  <a href="https://maps.app.goo.gl/cJBKSAJrKmfCFjM57" target="_blank" class="map-link font-bold text-slate-800">炉ばた屋鶴吉</a>
+                                    <span class="text-xs block mt-1">溫暖的爐端燒，品嚐當季烤魚。</span> </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div x-show="activeDay === 4" x-transition.opacity class="flex flex-col md:flex-row gap-6 items-start">
+                <div class="w-full md:w-1/4 polaroid rotate-2 bg-white">
+                    <img src="https://ageimo.com/wp-content/uploads/2020/07/1210-e1597366085756.jpg" class="polaroid-img mb-3">
+                    <div class="text-center font-sans text-sm text-gray-500">To Lake Toya</div>
+                </div>
+                <div class="w-full md:w-3/4 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-4xl font-bold text-orange-100">07</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-700">琥珀色的微醺</h3>
+                            <p class="text-xs text-gray-400 font-sans">週六 | 小樽 → 洞爺湖 (宿:洞爺湖)</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-road text-blue-500 mr-2"></i>景點</h4>
+                             <ul class="space-y-4 text-sm font-sans text-gray-600">
+                                <li>
+                                    <span class="font-bold text-slate-800">余市蒸餾所 (Yoichi)</span><br>
+                                    開車途經，參觀威士忌的故鄉（駕駛請勿試飲）。
+                                </li>
+                                <li>
+                                    <span class="font-bold text-slate-800">中山峠</span><br>
+                                    沿國道230號行駛。一定要買名物「炸馬鈴薯」當點心，順便眺望羊蹄山。
+                                </li>
+                                <li>
+                                    <span class="font-bold text-slate-800">洞爺湖 Illumination Tunnel</span><br>
+                                    晚上漫步溫泉街，欣賞夢幻的彩燈隧道。
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-orange-50/50 p-4 rounded-xl border border-orange-100">
+                            <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-utensils text-orange-500 mr-2"></i>食卓</h4>
+                            <ul class="space-y-4 text-sm font-sans text-gray-600">
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">早餐</span> <div>
+
+                                    <a href="https://www.google.com.tw/maps/place/%E5%B0%8F%E6%A8%BD%E4%B8%89%E8%A7%92%E5%B8%82%E5%A0%B4/@43.1951325,140.9923259,15z/data=!3m1!5s0x5f0ae1ace0935ed7:0x8bd08148f00eb454!4m6!3m5!1s0x5f0ae1acdc5d6be7:0xfdb67ce7ef454872!8m2!3d43.1990356!4d140.993927!16s%2Fg%2F11cjh_zn4b?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-link font-bold text-slate-800">小樽三角市場</a>
+                                    <span class="text-xs block mt-1">多數食堂約從7:00左右開門營業，主打現點現做的超新鮮朝食海鮮丼。</span> </div>
+
+                                </li>
+     <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">點心</span> <div>
+
+                                    <a href="https://maps.app.goo.gl/k2sYgGe7DnZqcLJC6" target="_blank" class="map-link font-bold text-slate-800">龜十麵包店 (Kameju)</a>
+                                    <span class="text-xs block mt-1">出發前買幾個老式傳統麵包在車上吃。</span> </div>
+
+                                </li>
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">午/晚</span> <div>
+
+                                    <a href="https://maps.app.goo.gl/hUy2xk74HeiFTKbn9" target="_blank" class="map-link font-bold text-slate-800">餐廳望羊蹄 (レストラン望羊蹄)</a>
+                                    <span class="text-xs block mt-1">洞爺湖畔的老字號洋食屋，漢堡排是一絕。</span> </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div x-show="activeDay === 5" x-transition.opacity class="flex flex-col md:flex-row gap-6 items-start">
+                <div class="w-full md:w-1/4 polaroid -rotate-2 bg-white">
+                    <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1280,h_1595/w_79,x_14,y_14,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/zhvkexrowxitzgmuceal/%E5%8C%97%E6%B5%B7%E9%81%93%E5%86%AC%E5%AD%A3%E9%99%90%E5%AE%9A%E6%B4%9E%E7%88%BA%E6%B9%96+%E7%99%BB%E5%88%A5%E5%B0%8F%E5%9C%98%E4%B8%80%E6%97%A5%E9%81%8A%E7%A9%8D%E9%9B%AA%E6%98%A0%E6%B9%96+%E7%81%AB%E5%B1%B1%E5%A5%87%E6%99%AF.webp" class="polaroid-img mb-3">
+                    <div class="text-center font-sans text-sm text-gray-500">Relaxing Toya</div>
+                </div>
+                <div class="w-full md:w-3/4 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-4xl font-bold text-orange-100">08</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-700">湖畔慢活</h3>
+                            <p class="text-xs text-gray-400 font-sans">週日 | 洞爺湖全日 (宿:洞爺)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-mountain text-blue-500 mr-2"></i>景點</h4>
+                            <ul class="space-y-4 text-sm font-sans text-gray-600">
+                                <li>
+                                    <span class="font-bold text-slate-800">有珠山纜車 & 昭和新山</span><br>
+                                    近距離感受活火山的震撼。
+                                </li>
+                                <li>
+                                    <span class="font-bold text-slate-800">洞爺湖遊船 (Optional)</span><br>
+                                    若有時間，可搭船至湖中島，看被雪覆蓋的鹿群。
+                                </li>
+                                <li>
+                                    <span class="font-bold text-slate-800">溫泉時光</span><br>
+                                    享受不凍湖的絕景露天溫泉。
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-orange-50/50 p-4 rounded-xl border border-orange-100">
+                            <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-coffee text-orange-500 mr-2"></i>食卓</h4>
+                            <ul class="space-y-4 text-sm font-sans text-gray-600">
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">甜點</span>
+ <a href="https://www.google.com.tw/maps/place/Lake+Hill+Farm/@42.6155364,140.7839161,17z/data=!4m14!1m7!3m6!1s0x5f7556325433ceb7:0x39cb3c4b99b3b88!2sLake+Hill+Farm!8m2!3d42.6155325!4d140.786491!16s%2Fg%2F1vxdy2hs!3m5!1s0x5f7556325433ceb7:0x39cb3c4b99b3b88!8m2!3d42.6155325!4d140.786491!16s%2Fg%2F1vxdy2hs?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-link font-bold text-slate-800">Lake Hill Farm</a>
+                                    <span class="text-xs block mt-1">新鮮牛奶製作的義式冰淇淋與泡芙。</span>
+                                </li>
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">晚餐</span>
+                                    <span class="text-slate-800">牛肋燒肉 or 居酒屋</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div x-show="activeDay === 6" x-transition.opacity class="flex flex-col md:flex-row gap-6 items-start">
+                <div class="w-full md:w-1/4 polaroid rotate-1 bg-white">
+                    <img src="https://d27h7u7rtwbie8.cloudfront.net/2019/12/dd3efbfec1af8342a8_fbtop.jpg" class="polaroid-img mb-3">
+                    <div class="text-center font-sans text-sm text-gray-500">Goodbye Hokkaido</div>
+                </div>
+                <div class="w-full md:w-3/4 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-4xl font-bold text-red-100">09</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-700">最後的絕景，滿載而歸</h3>
+                            <p class="text-xs text-gray-400 font-sans">週一 | CTS → TPE</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                         <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-100">
+                            <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-camera text-blue-500 mr-2"></i>景點</h4>
+                             <ul class="space-y-4 text-sm font-sans text-gray-600">
+                                <li>
+                                    <a href="https://maps.app.goo.gl/qgX8zkMYnUyBm5nW8" target="_blank" class="map-link font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>Silo 展望台 (觀景台)</a><br>
+                                    離開前，拍下洞爺湖最經典的全景照。
+                                </li>
+                                <li>
+                                    <span class="font-bold text-slate-800">支笏湖 (Optional)</span><br>
+                                    若時間充裕 (11:00前抵達)，可順遊冰濤祭會場。
+                                </li>
+                                <li>
+                                    <span class="font-bold text-red-600">12:30 機場還車</span><br>
+                                    務必預留時間辦理還車手續，及搭乘接駁車至航廈。
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-orange-50/50 p-4 rounded-xl border border-orange-100">
+                            <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-utensils text-orange-500 mr-2"></i>食卓</h4>
+                            <ul class="space-y-4 text-sm font-sans text-gray-600">
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">午餐</span>
+                                    <span class="text-slate-800">新千歲機場 拉麵道場</span>
+                                    <span class="text-xs block mt-1">離開前最後一碗北海道拉麵 (一幻、梅光軒等)。</span>
+                                </li>
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">伴手</span>
+                                    <span class="text-slate-800">Kinotoya 起司塔 / 美瑛選果</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </section>
 
     </main>
+
 
     <footer class="bg-white border-t border-gray-100 py-10 mt-10">
         <div class="max-w-4xl mx-auto text-center px-4">
