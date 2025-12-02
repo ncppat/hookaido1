@@ -122,7 +122,7 @@
     <div class="sticky top-0 z-40 bg-white/90 backdrop-blur-md shadow-sm py-3 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-4 overflow-x-auto no-scrollbar">
             <div class="flex space-x-3 md:justify-center min-w-max pb-1">
-                <template x-for="(day, index) in ['03 抵達', '04 雪祭', '05 圓山', '06 小樽', '07 移動', '08 洞爺', '09 歸途']">
+                <template x-for="(day, index) in ['2/3 抵達', '2/4 雪祭', '2/5 圓山', '2/6 小樽', '2/7 移動', '2/8 洞爺', '2/9 歸途']">
                     <button 
                         @click="activeDay = index; document.getElementById('itinerary-section').scrollIntoView({behavior: 'smooth'})"
                         :class="activeDay === index ? 'bg-slate-700 text-white shadow-md' : 'bg-gray-100 text-gray-500 hover:bg-gray-200'"
@@ -218,7 +218,7 @@
         </section>
 
         <!-- 2. TRANSPORT GUIDE (Full Content) -->
-        <section class="mb-8" x-data="{ expanded: true }">
+       <section class="mb-8" x-data="{ expanded: true }">
              <div class="flex items-end mb-6 border-b-2 border-gray-200 pb-2 cursor-pointer hover:bg-gray-50 transition p-2 rounded-lg select-none" @click="expanded = !expanded">
                 <div class="flex-1 flex items-end">
                     <h2 class="text-3xl font-bold text-slate-700 mr-4">交通案內</h2>
@@ -234,14 +234,13 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-4">
-                    <!-- Public -->
                     <div class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-rail-green">
                         <h3 class="text-xl font-bold text-slate-700 mb-4 flex items-center"><i class="fas fa-train text-rail-green mr-2"></i>Phase 1: 札幌無車漫遊</h3>
                         <ul class="space-y-4 font-sans text-sm text-gray-600">
                             <li class="flex items-start">
                                 <i class="fas fa-plane text-gray-400 mt-1 mr-3 w-4"></i>
                                 <div>
-                                    <span class="block font-bold text-gray-800">機場 → 札幌站</span>
+                                 <span class="block font-bold text-gray-800">機場 → 札幌站</span>
                                     搭乘 <span class="bg-green-100 text-green-800 px-1 rounded">JR 快速 Airport</span>，車程約38分鐘，無需預約。
                                 </div>
                             </li>
@@ -256,34 +255,57 @@
                                 <i class="fas fa-subway text-gray-400 mt-1 mr-3 w-4"></i>
                                 <div>
                                     <span class="block font-bold text-gray-800">市區觀光 (地鐵)</span>
-                                    住宿靠近地鐵東西線「圓山公園站」。搭地鐵至「大通站」僅需3站。可使用 Apple Pay Suica 或實體 ICOCA 卡。
+                                    住宿靠近地鐵東西線「圓山公園站」。搭地鐵至「大通站」僅需3站。
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <!-- Rental -->
+                    
                     <div class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-drive-indigo">
-                        <h3 class="text-xl font-bold text-slate-700 mb-4 flex items-center"><i class="fas fa-car text-drive-indigo mr-2"></i>Phase 2: 雪地自駕</h3>
-                        <ul class="space-y-4 font-sans text-sm text-gray-600">
+                        <h3 class="text-xl font-bold text-slate-700 mb-4 flex items-center"><i class="fas fa-car text-drive-indigo mr-2"></i>Phase 2: 租車雪地自駕</h3>
+                        
+                        <div class="bg-slate-50 rounded-lg p-4 mb-4 border border-slate-200">
+                            <div class="flex justify-between items-center border-b border-slate-200 pb-2 mb-2">
+                                <span class="text-xs font-bold text-slate-500">預約號碼: 99904664000</span>
+                                <span class="text-xs font-bold text-slate-500">W3 等級 | ¥94,889(稅込)</span>
+                            </div>
+                            <div class="grid grid-cols-1 gap-4">
+                                <div class="relative pl-3 border-l-2 border-blue-400">
+                                    <div class="text-xs text-drive-indigo font-bold mb-1">
+                                        <i class="fas fa-map-marker-alt mr-1"></i>取車: 
+                                        <a href="https://maps.app.goo.gl/WLUdCVwqX1zezCFe7" target="_blank" class="hover:underline hover:text-blue-600 transition-colors">宮之森店 <i class="fas fa-external-link-alt text-[10px] ml-0.5"></i></a>
+                                        <span class="ml-2 bg-blue-100 text-blue-600 px-1.5 py-0.5 rounded-[2px] text-[10px]">離民宿約7分鐘車程</span>
+                                    </div>
+                                    <div class="text-sm font-bold text-slate-800">02/06 (五) 08:30</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">札幌市中央區宮之森3条1丁目1-46</div>
+                                    <div class="text-[10px] text-gray-400">TEL: 011-631-0100</div>
+                                </div>
+                                <div class="relative pl-3 border-l-2 border-green-400">
+                                    <div class="text-xs text-drive-indigo font-bold mb-1">
+                                        <i class="fas fa-flag-checkered mr-1"></i>還車: 
+                                        <a href="https://maps.app.goo.gl/6CyyybrTkx9D7SuA7" target="_blank" class="hover:underline hover:text-blue-600 transition-colors">新千歲機場 POPLAR 店 <i class="fas fa-external-link-alt text-[10px] ml-0.5"></i></a>
+                                    </div>
+                                    <div class="text-sm font-bold text-slate-800">02/09 (一) 13:30</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">千歲市美々758-137</div>
+                                    <a href="https://rent.toyota.co.jp/global_zh-tw/shop/route/1_0008.html" target="_blank" class="inline-block mt-1 text-[10px] text-blue-500 underline hover:text-blue-700"><i class="fas fa-bus mr-1"></i>店鋪與接駁車資訊</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-3 font-sans text-sm text-gray-600">
                             <li class="flex items-start">
-                                <i class="fas fa-key text-gray-400 mt-1 mr-3 w-4"></i>
+                                <i class="fas fa-road text-gray-400 mt-1 mr-2 w-4"></i>
                                 <div>
-                                    <span class="block font-bold text-gray-800">取車 (2/6)</span>
-                                    建議 2/6 早上於札幌大通/札幌站附近取車。取車後直接上高速公路(札樽道)往小樽。
+                                    <span class="block font-bold text-gray-800 text-xs">TOYOTA租車預約中心</span>
+                                    電話：<strong>0800-7000-815</strong>（日本國內免付費）<p>
+          　　　<strong>+81-92-577-0091</strong>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-road text-gray-400 mt-1 mr-3 w-4"></i>
+                                <i class="fas fa-check-circle text-gray-400 mt-1 mr-2 w-4"></i>
                                 <div>
-                                    <span class="block font-bold text-gray-800">必備項目</span>
-                                    務必租用 <strong>ETC 卡</strong> 與 <strong>HEP</strong> (Hokkaido Expressway Pass) 以節省過路費。確認車輛為 4WD + 雪胎。
-                                </div>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-plane-departure text-gray-400 mt-1 mr-3 w-4"></i>
-                                <div>
-                                    <span class="block font-bold text-gray-800">機場還車 (2/9)</span>
-                                    租車公司的機場店通常在機場外圍，需搭接駁車至航廈。請預留 <strong>1 小時</strong> 處理還車手續。
+                                    <span class="block font-bold text-gray-800 text-xs">服務時間</span>
+                                    <strong>8:00～20:00</strong>（日本當地時間全年無休）
                                 </div>
                             </li>
                         </ul>
@@ -413,7 +435,6 @@
                     <img src="https://tw.wamazing.com/media/wp-content/uploads/sites/4/2019/09/shinchitoseairporttaxfree_pixta_94252250_M.jpg.webp" class="polaroid-img mb-3">
                     <div class="text-center font-sans text-sm text-gray-500">2026.02.03 <br> Welcome to Hokkaido</div>
                 </div>
-
                 <div class="w-full md:w-3/4 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
                     <div class="flex items-center gap-3 mb-4">
                         <span class="text-4xl font-bold text-blue-100">03</span>
@@ -443,6 +464,15 @@
                             <span class="block text-xs mt-1">日本新三大夜景，搭乘纜車俯瞰寶石般的札幌。</span>
                                 </li>
                             </ul>
+<div class="mt-4 pt-4 border-t border-blue-200">
+    <h5 class="font-bold text-slate-700 text-sm mb-2 flex items-center"><i class="fas fa-map-signs text-blue-500 mr-2"></i>當日交通細節</h5>
+    <ul class="list-disc list-inside text-xs text-gray-600 space-y-1">
+        <li><strong>藻岩山 (山頂)：</strong> 圓山公園站 (地鐵東西線)  to  西 11 丁目站 轉乘市電/公車  to 山麓站 (纜車)。</li>
+        <li><strong>纜車+迷你纜車</strong> ¥2,100 (山麓站來回觀景台)。</li>
+        <li><strong>夜間移動：</strong> 從藻岩山下山後，建議直接搭計程車回市區或住宿。</li>
+    </ul>
+</div>
+
                         </div>
                         
                         <div class="bg-orange-50/50 p-4 rounded-xl border border-orange-100">
@@ -452,7 +482,7 @@
                                     <span class="text-orange-400 font-bold min-w-[40px]">早餐</span>
                                     <div>
                                         <a href="https://maps.app.goo.gl/fBRCD8XQ5uAUwMtt5" target="_blank" class="map-link font-bold text-slate-800">桃園機場第２航夏</a>
-                                        <p class="text-xs">在管制區內有興波咖啡、麥當勞、豆豆里、春水堂等；在非管制區有星巴克、摩斯漢堡、漢堡王等</p>
+                                        <p class="text-xs">在管制區內有興波咖啡、麥當勞、豆豆里、春水堂等；在非管制區有星巴克、摩斯漢堡、漢堡王等。</p>
                                     </div>
                                 </li>
   <li class="flex gap-2 items-start">
@@ -500,6 +530,15 @@
                                 <li><a href="https://maps.app.goo.gl/XRGQLBGnfTErzJji6" target="_blank" class="map-link font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>PARCO 札幌</a><br>大通公園旁的購物地標。</li>
                                 <li><span class="font-bold text-blue-600">第76屆札幌雪祭</span> (大通&薄野)<br>傍晚點燈後最美，從電視塔俯瞰白色地毯，再到薄野看晶瑩剔透的冰雕。</li>
                             </ul>
+<div class="mt-4 pt-4 border-t border-blue-200">
+    <h5 class="font-bold text-slate-700 text-sm mb-2 flex items-center"><i class="fas fa-map-signs text-blue-500 mr-2"></i>當日交通細節</h5>
+    <ul class="list-disc list-inside text-xs text-gray-600 space-y-1">
+	<li><strong>圓山住宿 → 北海道大學：</strong> 「圓山公園站」搭東西線到「大通」，轉南北線到「北 12 條站」。</li>
+        <li><strong>北大 → Ramen Q：</strong> 搭南北線到「札幌站」或「大通站」。</li>
+        <li><strong>Ramen Q → 札幌啤酒博物館：</strong> 札幌站北口「北一條」搭乘中央巴士迴圈88到「札幌啤酒園」，較地鐵轉乘方便。</li>
+        <li><strong>札幌啤酒博物館 → PARCO札幌：</strong> 「札幌啤酒園」搭乘中央巴士迴圈88到「大通公園」。</li>
+    </ul>
+</div>
                         </div>
                         <div class="bg-orange-50/50 p-4 rounded-xl border border-orange-100">
                             <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-utensils text-orange-500 mr-2"></i>食卓</h4>
@@ -521,8 +560,8 @@
   <li class="flex gap-2 items-start">
                                     <span class="text-orange-400 font-bold min-w-[40px]">晚餐B</span>  <div>
 
-                                    <a href="https://maps.app.goo.gl/bwQuU6RbkW3hYNkp8" target="_blank" class="map-link font-bold text-slate-800">海膽專門店 世壱屋</a>
-  <p class="text-xs">小樽玻璃美術館旁也有一家。</p> </div>
+                                    <a href="https://maps.app.goo.gl/bwQuU6RbkW3hYNkp8" target="_blank" class="map-link font-bold text-slate-800">海膽專門店 世壱屋 札幌南二條店</a>
+  <p class="text-xs">薄野、小樽玻璃美術館旁也各有一家。</p> </div>
 
                                 </li>
 
@@ -553,6 +592,14 @@
                                 <li><a href="https://maps.app.goo.gl/PoadkeUuCc2G6nMo6" target="_blank" class="map-link font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>北海道神宮</a><br>在雪中參拜，感受莊嚴寧靜的氣氛。</li>
                                 <li><a href="https://maps.app.goo.gl/JEWKA1fC6NmTq8Ur6" target="_blank" class="map-link font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>札幌市圓山動物園</a><br>就在神宮旁，必看雪地裡翻滾的北極熊。</li>
                             </ul>
+<div class="mt-4 pt-4 border-t border-blue-200">
+    <h5 class="font-bold text-slate-700 text-sm mb-2 flex items-center"><i class="fas fa-map-signs text-blue-500 mr-2"></i>當日交通細節</h5>
+    <ul class="list-disc list-inside text-xs text-gray-600 space-y-1">
+        <li><strong>圓山周邊：</strong> 神宮、動物園、Moliere、森彥皆在圓山公園站步行範圍內。</li>
+        <li><strong>晚餐：</strong> 可搭車至薄野吃成吉思汗達摩本店。</li>
+        <li><strong>準備：</strong> 晚間回到住宿，打包行李，準備隔日租車自駕。</li>
+    </ul>
+</div>
                         </div>
                         <div class="bg-orange-50/50 p-4 rounded-xl border border-orange-100">
                             <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-utensils text-orange-500 mr-2"></i>食卓</h4>
@@ -612,6 +659,15 @@
                                 <li><a href="https://maps.app.goo.gl/9fAYP4vU33ngM9SE7" target="_blank" class="map-link font-bold text-slate-800">小樽市綜合博物館運河館</a></li>
                                 <li><a href="https://maps.app.goo.gl/Y9VoRZjxNhxuntRJ6" target="_blank" class="map-link font-bold text-slate-800">舊壽原邸</a></li>
                             </ul>
+<div class="mt-4 pt-4 border-t border-blue-200">
+    <h5 class="font-bold text-slate-700 text-sm mb-2 flex items-center"><i class="fas fa-map-signs text-blue-500 mr-2"></i>當日交通細節</h5>
+    <ul class="list-disc list-inside text-xs text-gray-600 space-y-1">
+        <li><strong>取車：</strong> 圓山住宿 → 搭計程車 → 宮之森店 (08:30 取車)。</li>
+        <li><strong>札幌 → 小樽：</strong> 走「札樽自動車道 (高速公路)」，車程約 45 分鐘，雪地務必慢行。</li>
+        <li><strong>小樽市區：</strong> 景點主要集中在運河和堺町通，可步行慢慢逛。</li>
+    </ul>
+</div>
+
                         </div>
                         <div class="bg-orange-50/50 p-4 rounded-xl border border-orange-100">
                             <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-utensils text-orange-500 mr-2"></i>食卓</h4>
@@ -672,8 +728,17 @@
                                 </li>
                                 <li>
                                     <span class="font-bold text-slate-800">洞爺湖 Illumination Tunnel</span><br>
-                                    晚上漫步溫泉街，欣賞夢幻的彩燈隧道。
+                                    晚上漫步溫泉街，欣賞夢幻的彩燈隧道。</span>
                                 </li>
+  </ul>
+<div class="mt-4 pt-4 border-t border-blue-200">
+    <h5 class="font-bold text-slate-700 text-sm mb-2 flex items-center"><i class="fas fa-map-signs text-blue-500 mr-2"></i>當日交通細節</h5>
+    <ul class="list-disc list-inside text-xs text-gray-600 space-y-1">
+        <li><strong>小樽 → 洞爺湖：</strong> 全程自駕。可選擇走一般道路 (國道 5 號) 經余市或高速公路 (約 2 小時)。</li>
+        <li><strong>推薦：</strong> 走國道可順遊余市蒸餾所與中山峠休息站，體驗沿途風光。</li>
+        <li><strong>雪地駕駛：</strong> 山路彎道多且積雪，請保持車距，切勿急煞或急轉。</li>
+  
+</div>
                             </ul>
                         </div>
                         <div class="bg-orange-50/50 p-4 rounded-xl border border-orange-100">
@@ -734,9 +799,17 @@
                                 </li>
                                 <li>
                                     <span class="font-bold text-slate-800">溫泉時光</span><br>
-                                    享受不凍湖的絕景露天溫泉。
+                                    享受不凍湖的絕景露天溫泉。</span>
                                 </li>
                             </ul>
+<div class="mt-4 pt-4 border-t border-blue-200">
+    <h5 class="font-bold text-slate-700 text-sm mb-2 flex items-center"><i class="fas fa-map-signs text-blue-500 mr-2"></i>當日交通細節</h5>
+    <ul class="list-disc list-inside text-xs text-gray-600 space-y-1">
+        <li><strong>移動：</strong> 主要為洞爺湖周邊短程自駕。</li>
+        <li><strong>停車：</strong> 昭和新山/有珠山纜車站設有收費停車場。</li>
+        <li><strong>湖畔：</strong> 沿著湖畔開車尋找絕佳視角，注意湖邊風大路滑。</li>
+    </ul>
+</div>
                         </div>
                         <div class="bg-orange-50/50 p-4 rounded-xl border border-orange-100">
                             <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-coffee text-orange-500 mr-2"></i>食卓</h4>
@@ -787,6 +860,14 @@
                                     務必預留時間辦理還車手續，及搭乘接駁車至航廈。
                                 </li>
                             </ul>
+<div class="mt-4 pt-4 border-t border-blue-200">
+    <h5 class="font-bold text-slate-700 text-sm mb-2 flex items-center"><i class="fas fa-map-signs text-blue-500 mr-2"></i>當日交通細節</h5>
+    <ul class="list-disc list-inside text-xs text-gray-600 space-y-1">
+        <li><strong>洞爺湖至機場：</strong> 可走道央自動車道 (高速公路)，車程約 1.5 - 2 小時。</li>
+        <li><strong>還車時間：</strong> 需在 12:30 前抵達新千歲機場 POPLAR 店還車，建議 10:00 左右從洞爺湖出發。</li>
+        <li><strong>接駁：</strong> 還車後，搭乘 TOYOTA 的接駁車前往機場航廈。</li>
+    </ul>
+</div>
                         </div>
                         <div class="bg-orange-50/50 p-4 rounded-xl border border-orange-100">
                             <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-utensils text-orange-500 mr-2"></i>食卓</h4>
