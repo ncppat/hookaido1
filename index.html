@@ -124,11 +124,27 @@
         activeDay: 0, 
         days: 7, 
         currentMonth: 2, 
-        startX: 0, /* 記錄滑動起始 X 座標 */
-        threshold: 50, /* 最小滑動距離 (px) */
+        startX: 0, 
+        threshold: 50,
         
-        prevDay() { this.activeDay = Math.max(0, this.activeDay - 1); }, 
-        nextDay() { this.activeDay = Math.min(this.days - 1, this.activeDay + 1); },
+        // 新增滾動功能函數
+        scrollToItinerary() { 
+            document.getElementById('itinerary-section').scrollIntoView({behavior: 'smooth'}); 
+        },
+        
+        // 確保滑動時會滾動
+        prevDay() { 
+            if (this.activeDay > 0) {
+                this.activeDay = this.activeDay - 1;
+                this.scrollToItinerary();
+            }
+        }, 
+        nextDay() { 
+            if (this.activeDay < this.days - 1) {
+                this.activeDay = this.activeDay + 1;
+                this.scrollToItinerary();
+            }
+        },
         
         handleStart(e) { 
             this.startX = e.touches ? e.touches[0].clientX : e.clientX; 
@@ -137,9 +153,9 @@
             const endX = e.changedTouches ? e.changedTouches[0].clientX : e.clientX; 
             const diff = this.startX - endX;
             
-            if (diff > this.threshold) { // 向左滑動 (下一天)
+            if (diff > this.threshold) { 
                 this.nextDay(); 
-            } else if (diff < -this.threshold) { // 向右滑動 (前一天)
+            } else if (diff < -this.threshold) { 
                 this.prevDay(); 
             } 
         } 
@@ -148,14 +164,12 @@
     @touchend="handleEnd($event)"
     @mousedown="handleStart($event)"
     @mouseup="handleEnd($event)"
-    x-effect="document.getElementById('itinerary-section').scrollIntoView({behavior: 'smooth'})"
->
-    <div class="sticky top-0 z-40 bg-white/90 backdrop-blur-md shadow-sm py-3 border-b border-gray-100">
+>    <div class="sticky top-0 z-40 bg-white/90 backdrop-blur-md shadow-sm py-3 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-4 overflow-x-auto no-scrollbar">
             <div class="flex space-x-3 md:justify-center min-w-max pb-1">
                 <template x-for="(day, index) in ['2/3 抵達', '2/4 雪祭', '2/5 圓山', '2/6 小樽', '2/7 移動', '2/8 洞爺', '2/9 歸途']">
                     <button 
-@click.stop="activeDay = index"
+@click.stop="activeDay = index; scrollToItinerary()"
                         :class="activeDay === index ? 'bg-slate-700 text-white shadow-md' : 'bg-gray-100 text-gray-500 hover:bg-gray-200'"
                         class="px-4 py-2 rounded-full font-sans text-xs md:text-sm transition-all duration-300 whitespace-nowrap">
                         <span x-text="day"></span>
