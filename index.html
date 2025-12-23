@@ -167,7 +167,7 @@
 >    <div class="sticky top-0 z-40 bg-white/90 backdrop-blur-md shadow-sm py-3 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-4 overflow-x-auto no-scrollbar">
             <div class="flex space-x-3 md:justify-center min-w-max pb-1">
-                <template x-for="(day, index) in ['2/3 抵達', '2/4 雪祭', '2/5 圓山', '2/6 小樽', '2/7 移動', '2/8 洞爺', '2/9 歸途']">
+                <template x-for="(day, index) in ['2/3 抵達', '2/4 雪祭', '2/5 圓山', '2/6 小樽', '2/7 洞爺', '2/8 登別', '2/9 歸途']">
                     <button 
 @click.stop="activeDay = index; scrollToItinerary()"
                         :class="activeDay === index ? 'bg-slate-700 text-white shadow-md' : 'bg-gray-100 text-gray-500 hover:bg-gray-200'"
@@ -658,7 +658,7 @@
                                     <span class="text-orange-400 font-bold min-w-[40px]">午餐</span>
                                     <div>
                                         <a href="https://maps.app.goo.gl/AsH5CceU2oUGoLwn6" target="_blank" class="map-link font-bold text-slate-800">Moliere (モリエール)</a>
-                                        <p class="text-xs">團長帶領！北海道米其林三星法式料理，位於圓山公園旁。<br><span class="text-red-400">*需提前預約</span></p>
+                                        <p class="text-xs">團長帶領！北海道米其林三星法式料理，位於圓山公園旁。<br><span class="text-red-400">*已預約中午12:00</span></p>
                                     </div>
                                 </li>
                                 <li class="flex gap-2 items-start">
@@ -699,10 +699,10 @@
                                 早上取車，行駛札樽道前往小樽。
                             </div>
                             <ul class="space-y-3 text-sm font-sans text-gray-600">
-                                <li><a href="https://maps.app.goo.gl/YEybB6vdujXz5xs96" target="_blank" class="map-link font-bold text-slate-800">花窗玻璃美術館 (舊高橋倉庫)</a></li>
-                                <li><a href="https://maps.app.goo.gl/yvRayqxZkodoS2zQ6" target="_blank" class="map-link font-bold text-slate-800">似鳥美術館 (Nitori)</a></li>
-                                <li><a href="https://maps.app.goo.gl/9fAYP4vU33ngM9SE7" target="_blank" class="map-link font-bold text-slate-800">小樽市綜合博物館運河館</a></li>
-                                <li><a href="https://maps.app.goo.gl/Y9VoRZjxNhxuntRJ6" target="_blank" class="map-link font-bold text-slate-800">舊壽原邸</a></li>
+                                <li><a href="https://maps.app.goo.gl/YEybB6vdujXz5xs96" target="_blank" class="map-link font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>花窗玻璃美術館 (舊高橋倉庫)</a></li>
+                                <li><a href="https://maps.app.goo.gl/yvRayqxZkodoS2zQ6" target="_blank" class="map-link font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>似鳥美術館 (Nitori)</a></li>
+                                <li><a href="https://maps.app.goo.gl/9fAYP4vU33ngM9SE7" target="_blank" class="map-link font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>小樽市綜合博物館運河館</a></li>
+                                <li><a href="https://maps.app.goo.gl/Y9VoRZjxNhxuntRJ6" target="_blank" class="map-link font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>舊壽原邸</a></li>
                             </ul>
 <div class="mt-4 pt-4 border-t border-blue-200">
     <h5 class="font-bold text-slate-700 text-sm mb-2 flex items-center"><i class="fas fa-map-signs text-blue-500 mr-2"></i>當日交通細節</h5>
@@ -764,12 +764,16 @@
                             <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-road text-blue-500 mr-2"></i>景點</h4>
                              <ul class="space-y-4 text-sm font-sans text-gray-600">
                                 <li>
-                                    <span class="font-bold text-slate-800">余市蒸餾所 (Yoichi)</span><br>
+                                     <a href="https://maps.app.goo.gl/16jXPxcUuiQErwb78" target="_blank" class="map-link font-bold text-slate-800"><span class="font-bold text-slate-800"><span class="font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>余市蒸餾所 (Yoichi)</a></span><br>
                                     開車途經，參觀威士忌的故鄉（駕駛請勿試飲）。
                                 </li>
                                 <li>
-                                    <span class="font-bold text-slate-800">中山峠</span><br>
-                                    沿國道230號行駛。一定要買名物「炸馬鈴薯」當點心，順便眺望羊蹄山。
+                                     <a href="https://maps.app.goo.gl/eGxWwSA1YRV7Z15PA" target="_blank" class="map-link font-bold text-slate-800"><span class="font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>中山峠</span></a><br>
+                                    沿國道230號行駛。到望羊中山休息站，一定要買名物「炸馬鈴薯」當點心，順便眺望羊蹄山。
+                                </li>
+<li>
+                                    <a href="https://maps.app.goo.gl/qgX8zkMYnUyBm5nW8" target="_blank" class="map-link font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>Silo 展望台 (觀景台)</a><br>
+                                    拍下洞爺湖最經典的全景照，可順路去買冰淇淋。
                                 </li>
                                 <li>
                                     <span class="font-bold text-slate-800">洞爺湖 Illumination Tunnel</span><br>
@@ -792,7 +796,7 @@
                                 <li class="flex gap-2 items-start">
                                     <span class="text-orange-400 font-bold min-w-[40px]">早餐</span> <div>
 
-                                    <a href="https://www.google.com.tw/maps/place/%E5%B0%8F%E6%A8%BD%E4%B8%89%E8%A7%92%E5%B8%82%E5%A0%B4/@43.1951325,140.9923259,15z/data=!3m1!5s0x5f0ae1ace0935ed7:0x8bd08148f00eb454!4m6!3m5!1s0x5f0ae1acdc5d6be7:0xfdb67ce7ef454872!8m2!3d43.1990356!4d140.993927!16s%2Fg%2F11cjh_zn4b?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-link font-bold text-slate-800">小樽三角市場</a>
+                                    <a href="https://maps.app.goo.gl/xiRGhbdbuPAKXtoc8" target="_blank" class="map-link font-bold text-slate-800">小樽三角市場</a>
                                     <span class="text-xs block mt-1">多數食堂約從7:00左右開門營業，主打現點現做的超新鮮朝食海鮮丼。</span> </div>
 
                                 </li>
@@ -801,7 +805,10 @@
 
                                     <a href="https://maps.app.goo.gl/k2sYgGe7DnZqcLJC6" target="_blank" class="map-link font-bold text-slate-800">龜十麵包店 (Kameju)</a>
                                     <span class="text-xs block mt-1">出發前買幾個老式傳統麵包在車上吃。</span> </div>
-
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-orange-400 font-bold min-w-[40px]">點心</span><div>
+                                    <a href="https://maps.app.goo.gl/mWdDJ2eJ38rVxKsn8" target="_blank" class="map-link font-bold text-slate-800">Lake Hill Farm</a>
+                                    <span class="text-xs block mt-1">新鮮牛奶製作的義式冰淇淋與泡芙。</span></div>
                                 </li>
                                 <li class="flex gap-2 items-start">
                                     <span class="text-orange-400 font-bold min-w-[40px]">午/晚</span> <div>
@@ -826,7 +833,7 @@
                         <span class="text-4xl font-bold text-orange-100">08</span>
                         <div>
                             <h3 class="text-xl font-bold text-slate-700">湖畔慢活</h3>
-                            <p class="text-xs text-gray-400 font-sans">週日 | 洞爺湖全日 (宿:洞爺)</p>
+                            <p class="text-xs text-gray-400 font-sans">週日 | 遊湖賞企鵝 (宿:洞爺湖)</p>
                         </div>
                     </div>
                     
@@ -834,14 +841,10 @@
                         <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-100">
                             <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-mountain text-blue-500 mr-2"></i>景點</h4>
                             <ul class="space-y-4 text-sm font-sans text-gray-600">
-                                <li>
-                                    <span class="font-bold text-slate-800">有珠山纜車 & 昭和新山</span><br>
-                                    近距離感受活火山的震撼。
+                             <li><a href="https://tw.nixe.co.jp/schedule/penguin-parade/" target="_blank" class="map-link font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>登別尼克斯海洋公園</a></span><br>
+                                    營業時間：9:00～16:00<br>企鵝遊行時間：11:00、14:15；企鵝吃飯時間：14:35前後。
                                 </li>
-                                <li>
-                                    <span class="font-bold text-slate-800">洞爺湖遊船 (Optional)</span><br>
-                                    若有時間，可搭船至湖中島，看被雪覆蓋的鹿群。
-                                </li>
+  <li><a href="https://www.toyakokisen.com/" target="_blank" class="map-link font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>洞爺湖汽船</a><br>民宿步行4分鐘。運航時間：9:00～16:00 (每60分一班)，無法上島，船程約45分。 KKDAY 優惠價 1,600 円</li>
                                 <li>
                                     <span class="font-bold text-slate-800">溫泉時光</span><br>
                                     享受不凍湖的絕景露天溫泉。</span>
@@ -851,7 +854,6 @@
     <h5 class="font-bold text-slate-700 text-sm mb-2 flex items-center"><i class="fas fa-map-signs text-blue-500 mr-2"></i>當日交通細節</h5>
     <ul class="list-disc list-inside text-xs text-gray-600 space-y-1">
         <li><strong>移動：</strong> 主要為洞爺湖周邊短程自駕。</li>
-        <li><strong>停車：</strong> 昭和新山/有珠山纜車站設有收費停車場。</li>
         <li><strong>湖畔：</strong> 沿著湖畔開車尋找絕佳視角，注意湖邊風大路滑。</li>
     </ul>
 </div>
@@ -859,11 +861,6 @@
                         <div class="bg-orange-50/50 p-4 rounded-xl border border-orange-100">
                             <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-coffee text-orange-500 mr-2"></i>食卓</h4>
                             <ul class="space-y-4 text-sm font-sans text-gray-600">
-                                <li class="flex gap-2 items-start">
-                                    <span class="text-orange-400 font-bold min-w-[40px]">甜點</span>
- <a href="https://www.google.com.tw/maps/place/Lake+Hill+Farm/@42.6155364,140.7839161,17z/data=!4m14!1m7!3m6!1s0x5f7556325433ceb7:0x39cb3c4b99b3b88!2sLake+Hill+Farm!8m2!3d42.6155325!4d140.786491!16s%2Fg%2F1vxdy2hs!3m5!1s0x5f7556325433ceb7:0x39cb3c4b99b3b88!8m2!3d42.6155325!4d140.786491!16s%2Fg%2F1vxdy2hs?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-link font-bold text-slate-800">Lake Hill Farm</a>
-                                    <span class="text-xs block mt-1">新鮮牛奶製作的義式冰淇淋與泡芙。</span>
-                                </li>
                                 <li class="flex gap-2 items-start">
                                     <span class="text-orange-400 font-bold min-w-[40px]">晚餐</span>
                                     <span class="text-slate-800">牛肋燒肉 or 居酒屋</span>
@@ -892,10 +889,6 @@
                          <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-100">
                             <h4 class="font-bold text-slate-700 mb-3 flex items-center"><i class="fas fa-camera text-blue-500 mr-2"></i>景點</h4>
                              <ul class="space-y-4 text-sm font-sans text-gray-600">
-                                <li>
-                                    <a href="https://maps.app.goo.gl/qgX8zkMYnUyBm5nW8" target="_blank" class="map-link font-bold text-slate-800"><i class="fas fa-map-marker-alt text-xs mr-1"></i>Silo 展望台 (觀景台)</a><br>
-                                    離開前，拍下洞爺湖最經典的全景照。
-                                </li>
                                 <li>
                                     <span class="font-bold text-slate-800">支笏湖 (Optional)</span><br>
                                     若時間充裕 (11:00前抵達)，可順遊冰濤祭會場。
